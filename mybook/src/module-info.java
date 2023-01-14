@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Bogdi
+ *
+ */
+module mybook {
+}
