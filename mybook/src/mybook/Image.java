@@ -1,49 +1,44 @@
 package mybook;
 
-public class Image implements Element{
-
+import java.awt.Dimension;
+import java.util.concurrent.TimeUnit;
+public class Image implements Element,Picture {
     private String imageName;
-
-    public Image(String imageName) {
-        super();
-        this.setImageName(imageName);
+    public Image(String name)
+    {
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        imageName=name;
     }
-
-    public String getImageName() {
-        return imageName;
+    public void print()
+    {
+        System.out.println("Image with name: "+imageName);
     }
-
-    public void setImageName(String imageName) {
-        this.imageName = imageName;
+    public void add(Element e){
     }
-
+    public void remove(Element e)
+    {
+    }
+//    public int get(int x) {
+//
+//    }
     @Override
-    public void print() {
-        // TODO Auto-generated method stub
-        System.out.println("Image with name: " + imageName);
-
+    public String url() {
+        return null;
     }
-
-	@Override
-	public void add(Element element) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void remove(Element element) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void get(Element element) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public Element get(int element) {
-		// TODO Auto-generated method stub
-		return null;
-	}}
+    @Override
+    public Dimension dim() {
+        return null;
+    }
+    @Override
+    public String content() {
+        return null;
+    }
+    @Override
+    public Element get(int element) {
+        return null;
+    }
+}

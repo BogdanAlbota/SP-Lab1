@@ -6,4 +6,5 @@
  *
  */
 module mybook {
+	requires java.desktop;
 }
