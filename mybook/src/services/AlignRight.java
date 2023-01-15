@@ -1,4 +1,4 @@
-package mybook;
+package services;
 
 public class AlignRight implements AlignStrategy {
 

@@ -1,4 +1,4 @@
-package mybook;
+package models;
 
 import java.awt.*;
 

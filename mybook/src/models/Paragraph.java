@@ -1,4 +1,9 @@
-package mybook;
+package models;
+
+import services.AlignCenter;
+import services.AlignLeft;
+import services.AlignRight;
+import services.AlignStrategy;
 
 public class Paragraph implements Element {
     private String name;

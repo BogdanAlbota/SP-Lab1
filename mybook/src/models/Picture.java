@@ -1,4 +1,4 @@
-package mybook;
+package models;
 import java.awt.*;
 public interface Picture {
     public String url();

@@ -1,10 +1,10 @@
-package mybook;
+package services;
 
-public class JPGImageLoader implements ImageLoader{
+public class BMPImageLoader implements ImageLoader{
 
     private String url;
 
-    public JPGImageLoader(String url) {
+    public BMPImageLoader(String url) {
         super();
         this.setUrl(url);
     }
@@ -22,6 +22,5 @@ public class JPGImageLoader implements ImageLoader{
     public void setUrl(String url) {
         this.url = url;
     }
-
 
 }

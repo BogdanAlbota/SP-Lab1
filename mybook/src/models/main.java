@@ -1,4 +1,8 @@
-package mybook;
+package models;
+
+import services.AlignCenter;
+import services.AlignLeft;
+import services.AlignRight;
 
 public class main {
 

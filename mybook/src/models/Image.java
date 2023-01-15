@@ -1,7 +1,9 @@
-package mybook;
+package models;
 
 import java.awt.*;
 import java.util.concurrent.TimeUnit;
+
+import services.ImageLoaderFactory;
 public class Image extends ImageLoaderFactory implements Element,Picture  {
     private String imageName;
     

@@ -1,4 +1,4 @@
-package mybook;
+package models;
 
 public class TableOfContents implements Element{
     private String table;

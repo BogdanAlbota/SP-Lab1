@@ -1,4 +1,4 @@
-package mybook;
+package models;
 
 public class Table implements Element{
     private String name;
