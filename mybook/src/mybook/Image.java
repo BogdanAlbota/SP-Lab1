@@ -1,30 +1,10 @@
 package mybook;
 
-import java.awt.Dimension;
+import java.awt.*;
 import java.util.concurrent.TimeUnit;
-public class Image implements Element,Picture {
+public class Image extends ImageLoaderFactory implements Element,Picture  {
     private String imageName;
-    public Image(String name)
-    {
-        try {
-            TimeUnit.SECONDS.sleep(5);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        imageName=name;
-    }
-    public void print()
-    {
-        System.out.println("Image with name: "+imageName);
-    }
-    public void add(Element e){
-    }
-    public void remove(Element e)
-    {
-    }
-//    public int get(int x) {
-//
-//    }
+    
     @Override
     public String url() {
         return null;
@@ -41,4 +21,19 @@ public class Image implements Element,Picture {
     public Element get(int element) {
         return null;
     }
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void add(Element element) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void remove(Element element) {
+		// TODO Auto-generated method stub
+		
+	}
 }

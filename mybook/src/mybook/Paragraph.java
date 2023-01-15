@@ -2,6 +2,7 @@ package mybook;
 
 public class Paragraph implements Element {
     private String name;
+    private AlignStrategy textAlignment;
 
     public Paragraph(String name) {
         super();
@@ -11,26 +12,51 @@ public class Paragraph implements Element {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     @Override
     public void print() {
         System.out.println("Paragraph: " + name);
 
+        if(textAlignment==null)
+            System.out.println("Paragraph: " + name);
+        else
+            textAlignment.render(name);
+
     }
+
     @Override
     public void add(Element element) {
 
     }
+
     @Override
     public void remove(Element element) {
         // TODO Auto-generated method stub
 
     }
+
     @Override
     public Element get(int element) {
         return null;
     }
 
+    public void setAlignStrategy (AlignRight alignRight) {
+ 
+        textAlignment = new AlignRight();
+
+    }
+
+    public void setAlignStrategy(AlignLeft alignLeft) {
+
+        textAlignment = new AlignLeft();
+    }
+
+    public void setAlignStrategy(AlignCenter alignCenter) {
+        textAlignment = new AlignCenter();
+
+    }
 }
