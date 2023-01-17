@@ -1,2 +1,2 @@
 # Nota propusa:
-4
+6
